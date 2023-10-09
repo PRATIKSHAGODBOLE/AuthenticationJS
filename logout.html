@@ -5,21 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authentication</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <style>
-       #logout {
-  background-color: #ff0000; /* Set the background color to red */
-  color: #ffffff; /* Set the text color to white */
-  padding: 10px 20px; /* Add padding to the button */
-  border: none; /* Remove the button border */
-  cursor: pointer; /* Change the cursor to a pointer on hover */
-  font-size: 16px; /* Set the font size */
-  border-radius: 5px; /* Add some rounded corners */
-}
-
-#logout:hover {
-  background-color: #cc0000; /* Change the background color on hover */
-}
+    
+    
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
@@ -30,8 +21,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f1f3f6;
-    width: 95vw;
-
 }
 
 :root {
@@ -52,13 +41,13 @@ header .nav-container{
     /* justify-content: space-between; */
     align-items: center;
     height: 100%;
-    max-width: 1220px;
+    max-width: 1248px;
     margin: 0 auto;
 }
 header .nav-container .logo {
     display: flex;
     min-width: 137px;
-    justify-content: center;
+    justify-content: flex-end;
 }
 header .nav-container .logo img{
     width: 75px;
@@ -291,15 +280,12 @@ footer {
     color: #878787 ;
 }
 
+#contact{
+font-family:Arial, Helvetica, sans-serif;}
+
 </style>
 <body>
    
-    
-
-
-    
-  
-
     <!-- header -->
     <header>
         <div class="nav-container">
@@ -315,8 +301,9 @@ footer {
                 </div>
             </div>
             <div class="login">
-                <p style="color: white; font-weight: bold;">Welcome, <span id="username"></span></p>
-                <button id="logout">Logout</button><br><br>
+                <p style="color: white; font-weight: bold;" class="mt-2">Welcome, <span id="username"></span></p>&nbsp;
+                <!-- <button id="logout">Logout</button><br><br> -->
+                <button >Logout</button>
             </div>
             <div class="become-seller">
                 Become a Seller
@@ -325,12 +312,54 @@ footer {
                 More
                 <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="zZ3yfL"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_2gTTdy"></path></svg>
             </div>
-          
+            <div class="cart">
+                <svg class="V3C5bO" width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path class="_1bS9ic" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path></svg>
+                Cart
+            </div>
         </div>
     </header>
 
     <!-- section 1 -->
-  
+    <section class="section-1">
+        <div class="section-1-container">
+            <div class="section-1-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/178cf5a874cd697a.png?q=100" alt="">
+                Top Offers
+            </div>
+            <div class="section-1-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e2268d56d09df684.png?q=100" alt="">
+                Mobiles & Tablets
+            </div>
+            <div class="section-1-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100" alt="">
+                Electronics
+            </div>
+            <div class="section-1-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100" alt="">
+                TVs & Appliances
+            </div>
+            <div class="section-1-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100" alt="">
+                Fashion
+            </div>
+            <div class="section-1-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5f09b2d254acb48a.png?q=100" alt="">
+                Beauty
+            </div>
+            <div class="section-1-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5972d5da375c81c7.png?q=100" alt="">
+                Home & Furniture
+            </div>
+            <div class="section-1-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/1cfc2d91f717510a.png?q=100" alt="">
+                Flights
+            </div>
+            <div class="section-1-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/d154c0b4d536c1cf.png?q=100" alt="">
+                Grocery
+            </div>
+        </div>
+    </section>
 
     <!-- section 2 -->
     <section class="section-2 container">
@@ -408,9 +437,81 @@ footer {
     </section>
 
     <!-- footer -->
-    <footer>
-        Made in 🇮🇳 by Flipkart
-    </footer>
+   <!-- footer -->
+   <div class="container my-2 " style="color: rgb(13, 11, 11);">
+    <section id="contact" class="contact">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          
+        </div>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h6>Location:</h6>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h6>Email:</h6>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h6>Call:</h6>
+                <p>18000800999</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+              </div>
+           
+              <button type="submit" class="btn btn-primary text-center mb-4 mt-2 ">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <div class="text-center"><span class="pCGSTE">© 2007-<!-- -->2023<!-- --> <span>Flipkart.com</span></span><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt="Payment methods"></div>
+
+    
+  
+
+
+            <!-- <div class="login">
+                <p style="color: white; font-weight: bold;">Welcome, <span id="username"></span></p>
+                <button id="logout">Logout</button><br><br>
+            </div> -->
+           
 
 
     <script>
