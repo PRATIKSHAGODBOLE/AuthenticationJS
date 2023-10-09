@@ -303,7 +303,7 @@ font-family:Arial, Helvetica, sans-serif;}
             <div class="login">
                 <p style="color: white; font-weight: bold;" class="mt-2">Welcome, <span id="username"></span></p>&nbsp;
                 <!-- <button id="logout">Logout</button><br><br> -->
-                <button >Logout</button>
+                <button id="logout">Logout</button>
             </div>
             <div class="become-seller">
                 Become a Seller
@@ -515,20 +515,24 @@ font-family:Arial, Helvetica, sans-serif;}
 
 
     <script>
-        
-let data = JSON.parse(localStorage.getItem('user'))
-console.log(data)
-document.querySelector('#username').innerHTML = data.username
-// logout button event listener
+    
+    
+document.addEventListener("DOMContentLoaded", function() {
+  let data = JSON.parse(localStorage.getItem('user'));
+  console.log(data);
+  document.querySelector('#username').innerHTML = data.username;
 
-  document.getElementById('logout').addEventListener('click',function() {
-        localStorage.removeItem('user')
-        window.location.href = 'index.html';
-      
-   
-  }); 
+  // Add an event listener to the logout button
+  document.getElementById('logout').addEventListener('click', function() {
+    localStorage.removeItem('user');
+    window.location.href = 'index.html'; // Make sure this path is correct
+  });
+});
 
-    </script>
+</script>
+ 
+
+    
 
 </body>
 
